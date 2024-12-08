@@ -1,0 +1,10 @@
+# Ignora le cartelle di configurazione degli IDE
+.idea/
+.vscode/
+
+# Ignora le cartelle degli ambienti virtuali
+myvenv/
+venv/
+
+# Ignora la cartella specificata
+110m_cultural/
