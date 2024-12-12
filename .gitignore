@@ -9,3 +9,4 @@ venv/
 # Ignora la cartella specificata
 110m_cultural/
 
+.DS_Store
