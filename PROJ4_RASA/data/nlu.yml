@@ -1,0 +1,102 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Ciao
+    - Buongiorno
+    - Hey
+    - Salve
+
+- intent: request_workout_plan
+  examples: |
+    - Voglio un piano di allenamento settimanale
+    - Puoi crearmi un programma di esercizi?
+    - Aiutami a pianificare gli allenamenti per questa settimana
+    - Piano per allenarmi questa settimana
+
+- intent: request_diet_plan
+  examples: |
+    - Puoi darmi una dieta settimanale?
+    - Ho bisogno di un piano alimentare
+    - Suggerimenti per una dieta sana?
+    - Dammi una dieta per perdere peso
+
+- intent: goodbye
+  examples: |
+    - Arrivederci
+    - Grazie, ciao
+    - A presto
+
+- intent: RichiestaEsercizio
+  examples: |
+    - Dammi un esercizio per le braccia
+    - Ho bisogno di un allenamento per le gambe
+    - Qual è un buon esercizio per la schiena?
+    - Mostrami un esercizio per gli addominali
+
+- intent: RichiestaRicetta
+  examples: |
+    - Come preparo lo yogurt magro?
+    - Puoi dirmi la ricetta dello yogurt con frutta e cereali?
+    - Vorrei sapere come fare lo yogurt magro con frutta.
+
+- intent: RichiestaDieta
+  examples: |
+    - Puoi dirmi una dieta per perdere peso?
+    - Ho bisogno di una dieta per aumentare massa muscolare.
+    - Qual è una dieta equilibrata?
+    - Dammi un esempio di dieta vegana.
+    - Vorrei una dieta per migliorare la mia energia.
+
+- intent: RichiestaSchedaAllenamento
+  examples: |
+    - Puoi darmi una scheda di allenamento per le braccia?
+    - Ho bisogno di un programma per le gambe.
+    - Qual è una buona scheda per il petto?
+    - Dammi un allenamento per la schiena.
+    - Vorrei una scheda per gli addominali.
+    - Puoi suggerirmi un allenamento per le spalle?
+
+- intent: RichiestaAllenamentoDefaticante
+  examples: |
+    - Puoi darmi un allenamento defaticante?
+    - Ho bisogno di un programma per defaticare i muscoli.
+    - Quali esercizi posso fare per defaticare dopo l'allenamento?
+    - Dammi un allenamento di stretching.
+    - Vorrei sapere come defaticare dopo una corsa.
+
+- intent: domande_scheda_braccia
+  examples: |
+    - Qual è il numero di serie e ripetizioni per i curl con manubri?
+    - Come posso eseguire correttamente le estensioni tricipiti?
+    - Quali muscoli vengono coinvolti nelle flessioni?
+
+- intent: domande_scheda_gambe
+  examples: |
+    - Quante serie devo fare per gli squat?
+    - Come posso migliorare la mia forma negli affondi?
+    - Qual è la corretta esecuzione per gli stacchi da terra?
+
+- intent: domande_scheda_petto
+  examples: |
+    - Qual è la differenza tra panca piana e panca inclinata?
+    - Come posso eseguire correttamente le croci con manubri?
+    - Quante ripetizioni dovrei fare per le flessioni?
+
+- intent: domande_scheda_schiena
+  examples: |
+    - Qual è la tecnica corretta per il rematore con manubri?
+    - Come posso migliorare la mia larghezza della schiena con la lat machine?
+    - Quante serie devo fare per i pull-up?
+
+- intent: domande_scheda_addominali
+  examples: |
+    - Qual è la corretta esecuzione per i crunch?
+    - Come posso mantenere la posizione del plank per 30 secondi?
+    - Quali muscoli vengono coinvolti nel Russian twist?
+
+- intent: domande_scheda_spalle
+  examples: |
+    - Qual è la tecnica corretta per lo shoulder press?
+    - Come posso eseguire le alzate laterali senza infortuni?
+    - Quante ripetizioni dovrei fare per le alzate frontali?

@@ -1,0 +1,51 @@
+version: "3.1"
+rules:
+- rule: Rispondi al saluto
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Fornisci il piano di allenamento
+  steps:
+  - intent: request_workout_plan
+  - action: utter_workout_plan
+
+- rule: Fornisci il piano alimentare
+  steps:
+  - intent: request_diet_plan
+  - action: utter_diet_plan
+
+- rule: Rispondi al saluto di addio
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Rispondi alle domande sulla scheda braccia
+  steps:
+  - intent: domande_scheda_braccia
+  - action: utter_domande_scheda_braccia
+
+- rule: Rispondi alle domande sulla scheda gambe
+  steps:
+  - intent: domande_scheda_gambe
+  - action: utter_domande_scheda_gambe
+
+- rule: Rispondi alle domande sulla scheda petto
+  steps:
+  - intent: domande_scheda_petto
+  - action: utter_domande_scheda_petto
+
+- rule: Rispondi alle domande sulla scheda schiena
+  steps:
+  - intent: domande_scheda_schiena
+  - action: utter_domande_scheda_schiena
+
+- rule: Rispondi alle domande sulla scheda addominali
+  steps:
+  - intent: domande_scheda_addominali
+  - action: utter_domande_scheda_addominali
+
+- rule: Rispondi alle domande sulla scheda spalle
+  steps:
+  - intent: domande_scheda_spalle
+  - action: utter_domande_scheda_spalle
