@@ -1,0 +1,31 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJwtisEJgDAMAFfJAE7QVURCaAIG2lSa6qd0dwP6uztun2uDeXV5kPLQZgnmB2hUJcEvRX2IxXu79HjUQkcCbpWMBT2fwoTEEdSo6FrHC2AsI34=": "utter_domande_scheda_addominali",
+    "eJyVjVEKgDAMQ6+yA3iCXUWklLVgYetk6/wZu7sD/RXxLwkvydrH4vpR+AQMJlm967cAxcTePSZKNdbJtsplMqLTmneUEyox1LAzISDNQBSjjI/dZsYF3ut/nrYLjX5Mgg==": "action_listen",
+    "eJwtitEJgDAMBVfJAE7QVURKaB8YsKk01Z/S3Y3o193BrWMuNM6GO3LqUjXQ+CQqFwT64xDrUH8vQ/NH1LMHyrWwZkRLOzK/ECjPuT33miJH": "utter_domande_scheda_schiena",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJT83MS8lNb44OSM1JRFEZabmJdYSMLS0pCS1KB6HXqLtiAUA5KdI3Q==": "action_listen",
+    "eJwti8EJgDAMAFfJAE7Qn46gT5ESYqCBmkob/ZTubkV/d3C31jZAPTPfHskkqYP6gVc82MEvUYqx9vYqnHsj2tUczEJBuBguFHjHMUZ+P7U0ZSQSbG17AIMRJmc=": "utter_scheda_braccia",
+    "eJydjUsKgDAMRK/SA3iC7vQIuhQpMQYaqFHa6KZ4d+tnL7ibB/Nm+nxUJq+RdgeovIg1+QlOYCZrXgiclKR0t0SxdFgKqjUto2dKCh16mqAOgS5PdGkiIDIcH/ubKkWXbtuNr/PnZjgB4j5N0A==": "action_listen",
+    "eJwtytEJwCAMRdFVMkAncBUpIeiDChrF2P6Iu1do/+6B6+c6aLaOhyWMVNXR/IJVChz9yMkGdL+3oe8n6eZwFGsRjWALF6KwNckZa50v1c8h7Q==": "utter_domande_scheda_spalle",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJT83MS8lNb44OSM1JTG+uCAxJye1loCZpSUlqUXx2LUSa0MsABESR88=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhKLWwNLW4JD4lM7UkviAnMa+2NhYAVE0ghg==": "utter_diet_plan",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhKLWwNLW4JD4lM7UkviAnMa+WgHmlJSWpRUjKiTExFgDLGUAy": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohKDM5IzO1uCQxODkjNSXRMScnFaQvryTfPTE3KbW2NhYANvAlng==": "utter_scheda_gambe",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohKDM5IzO1uCQxODkjNSXRMScnFaQvryTfPTE3KbWWgOmlJSWpRfHFYL3x6WAdpFsRCwASeEt1": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJT83MS8lNb44OSM1JTG+ILWkJL+2NhYAtEshmA==": "utter_domande_scheda_petto",
+    "eJyNjFEKgCAQBa/iATqBV4lYFn2QkKvo2o9494T6DOrvDcybtY/F9FxwEjsNSazp9yDhCGseOEJVyHRbRZlOkIlqjU+RxYOq2+GZMlTT+Eg2VRR6ff7sbxdC/UbQ": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohKDM5IzO1uCTRFSienFmVme+emJuUWlsbCwAYISKT": "utter_richiesta_esercizio_gambe",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohKDM5IzO1uCTRFSienFmVme+emJuUWkvA1NKSktSi+CKY5vhUmO74dLB24u2JBQBYMErf": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohKDM5IzO1uCTRFSienFmVmR8MEshLrK2NBQBe1iNy": "utter_richiesta_esercizio_schiena",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohKDM5IzO1uCTRFSienFmVmR8MEshLrCVgbmlJSWpRfBFMe3wqTH98MdQAUuyKBQAySk18": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJT83MS8lNb44OSM1JTE+PTE3KbW2NhYAszshaA==": "utter_domande_scheda_gambe",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJT83MS8lNb44OSM1JTE+PTE3KbWWgJGlJSWpRfFYdRJpfiwAJq1GQA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohKDM5IzO1uCTRFSienFmVme9UlJicnJlYWxsLAF4sI1w=": "utter_richiesta_esercizio_braccia",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohKDM5IzO1uCTRFSienFmVme9UlJicnJlYS8Dc0pKS1KL4Ipj2+FSY/vgkqAGk2BULACNSTTo=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhKLWwNLW4JL48vyg7v7QkviAnMa+2NhYAutUh+w==": "utter_workout_plan",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhKLWwNLW4JL48vyg7v7QkviAnMa+WgJGlJSWpRag6iDQ3FgBMWUSR": "action_listen",
+    "eJwtysEJgDAMQNFVMoATdBWRENOAAZtKWr2E7m5Bb//BX2MsEJfLg8RdqyWIL9CoSIIfp7YuNt+7ic9HbbInyLWQZcHGh2TC3YlZaYztBfbwIjE=": "utter_domande_scheda_braccia",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJT83MS8lNb44OSM1JTE+qSgxOTkzsZaAoaUlJalF8Tj0Em1HLADWoUib": "action_listen"
+  }
+}

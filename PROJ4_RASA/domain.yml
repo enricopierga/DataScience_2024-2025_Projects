@@ -1,157 +1,140 @@
-version: "3.1"
+version: "3.1"  # Versione del formato del file di dominio
+
+# Definizione degli intenti che il bot può riconoscere
 intents:
-  - greet
-  - request_workout_plan
-  - request_diet_plan
-  - goodbye
-  - RichiestaEsercizio
-  - RichiestaRicetta
-  - RichiestaDieta
-  - RichiestaSchedaAllenamento
-  - RichiestaAllenamentoDefaticante
-  - domande_scheda_braccia
-  - domande_scheda_gambe
-  - domande_scheda_petto
-  - domande_scheda_schiena
-  - domande_scheda_addominali
-  - domande_scheda_spalle
+  - greet  # Intento per il saluto
+  - request_workout_plan  # Intento per richiedere un piano di allenamento
+  - request_diet_plan  # Intento per richiedere un piano alimentare
+  - RichiestaDietaVegana  # Intento per richiedere una dieta vegana
+  - RichiestaDietaKeto  # Intento per richiedere una dieta keto
+  - RichiestaSchedaAllenamentoSchiena  # Intento per richiedere una scheda di allenamento per la schiena
+  - RichiestaAllenamentoDefaticante  # Intento per richiedere un allenamento defaticante
+  - RichiestaSchedaAllenamentoGambe  # Intento per richiedere una scheda di allenamento per le gambe
+  - RichiestaSchedaAllenamentoPetto  # Intento per richiedere una scheda di allenamento per il petto
+  - RichiestaSchedaAllenamentoBraccia  # Intento per richiedere una scheda di allenamento per le braccia
+  - RichiestaSchedaAllenamentoAddominali  # Intento per richiedere una scheda di allenamento per gli addominali
+  - RichiestaSchedaAllenamentoSpalle  # Intento per richiedere una scheda di allenamento per le spalle
+  - RichiestaEsercizioBraccia  # Intento per richiedere esercizi per le braccia
+  - RichiestaEsercizioGambe  # Intento per richiedere esercizi per le gambe
+  - RichiestaEsercizioSchiena  # Intento per richiedere esercizi per la schiena
+  - RichiestaEsercizioDefaticante  # Intento per richiedere esercizi defaticanti
+  - RichiestaEsercizioPetto  # Intento per richiedere esercizi per il petto
+  - goodbye  # Intento per il saluto finale
+
+
+  forms:
+  workout_form:
+    required_slots:
+      goal:
+        - type: from_text
+      experience:
+        - type: from_text
+      availability:
+        - type: from_text
 
 responses:
+  utter_ask_goal:
+    - text: "Qual è il tuo obiettivo principale (ad esempio, perdere peso, aumentare la massa muscolare)?"
+  utter_ask_experience:
+    - text: "Qual è il tuo livello di esperienza (principiante, intermedio, avanzato)?"
+  utter_ask_availability:
+    - text: "Quante ore puoi dedicare agli allenamenti ogni settimana?"
+    
   utter_greet:
-    - text: "Ciao! Come posso aiutarti oggi? Vuoi un piano di allenamento o una dieta?"
-  
+    - text: "Ciao! Io sono FitBot, il tuo assistente per il fitness. Come posso aiutarti oggi?"  # Risposta per il saluto
+
   utter_workout_plan:
-    - text: |
-        Ecco un piano di allenamento settimanale:
-        - **Lunedì**: Cardio (30 min) + Addominali (15 min)
-        - **Martedì**: Corpo libero (squat, flessioni, affondi, 40 min)
-        - **Mercoledì**: Riposo attivo (yoga o camminata 30 min)
-        - **Giovedì**: Cardio HIIT (20 min) + Stretching
-        - **Venerdì**: Upper Body (pesi per braccia, petto, 40 min)
-        - **Sabato**: Lower Body (esercizi gambe e glutei, 30 min)
-        - **Domenica**: Riposo
+    - text: "Ecco un piano di allenamento settimanale: Lunedì - Petto e tricipiti, Martedì - Schiena e bicipiti, Mercoledì - Gambe, Giovedì - Spalle, Venerdì - Addominali e cardio, Sabato - Riposo, Domenica - Allenamento totale."  # Risposta per il piano di allenamento
 
   utter_diet_plan:
-    - text: |
-        Ecco una dieta settimanale bilanciata:
-        - **Colazione**: Yogurt magro con frutta e cereali integrali
-        - **Spuntino**: Frutta secca (30g) o una mela
-        - **Pranzo**: Petto di pollo alla griglia con insalata mista
-        - **Spuntino**: Carote o cetrioli con hummus
-        - **Cena**: Salmone al forno con verdure cotte
-        Ricordati di bere almeno 2 litri di acqua al giorno!
-
-  utter_goodbye:
-    - text: "Grazie per avermi usato! A presto e buon allenamento! 💪"
-
-  utter_richiesta_esercizio:
-    - text: "Ecco un esercizio per le braccia: prova i curl con i manubri."
-      image: "images/link_immagine_curl.jpg"
-    - text: "Per le gambe, ti consiglio di fare squat."
-
-  utter_richiesta_ricetta:
-    - text: "Ecco come preparare lo yogurt magro con frutta e cereali:\n\n**Ingredienti**:\n- 200g di yogurt magro\n- 1 banana o altra frutta a piacere\n- 30g di cereali integrali\n- Miele (opzionale)\n\n**Procedimento**:\n1. In una ciotola, versa lo yogurt magro.\n2. Aggiungi la frutta tagliata a pezzi.\n3. Cospargi con i cereali integrali.\n4. Se desideri, aggiungi un po' di miele per dolcificare.\n5. Mescola bene e gusta!\n\nBuon appetito!"
+    - text: "Ecco una dieta settimanale bilanciata: Colazione - avena con frutta, Pranzo - pollo alla griglia con insalata, Cena - pesce con verdure al vapore, Snack - frutta secca e yogurt."  # Risposta per il piano alimentare
 
   utter_dieta_perdita_peso:
-    - text: "Ecco un esempio di dieta per perdere peso:\n\n**Colazione**: 1 tazza di tè verde + 1 fetta di pane integrale con avocado.\n**Spuntino**: 1 mela.\n**Pranzo**: Insalata mista con pollo grigliato e vinaigrette.\n**Spuntino**: Yogurt magro.\n**Cena**: Pesce al forno con verdure al vapore."
+    - text: "Ecco un esempio di dieta per perdere peso: Colazione - smoothie verde (250 kcal, 30g carboidrati, 10g proteine, 5g grassi), Pranzo - insalata di quinoa con verdure (400 kcal, 50g carboidrati, 20g proteine, 15g grassi), Cena - petto di pollo alla griglia con broccoli (350 kcal, 10g carboidrati, 40g proteine, 15g grassi), Snack - carote e hummus (150 kcal, 20g carboidrati, 5g proteine, 7g grassi)."  # Risposta per la dieta per perdita di peso
 
   utter_dieta_aumento_massa:
-    - text: "Ecco un esempio di dieta per aumentare la massa muscolare:\n\n**Colazione**: Omelette con 3 uova e spinaci + 1 banana.\n**Spuntino**: Frullato di proteine.\n**Pranzo**: Riso integrale con petto di pollo e broccoli.\n**Spuntino**: Noci e frutta secca.\n**Cena**: Manzo magro con patate dolci."
+    - text: "Ecco un esempio di dieta per aumentare la massa muscolare: Colazione - omelette con 3 uova e spinaci (400 kcal, 5g carboidrati, 30g proteine, 30g grassi), Pranzo - riso integrale con pollo e avocado (600 kcal, 70g carboidrati, 40g proteine, 20g grassi), Cena - salmone con patate dolci (500 kcal, 50g carboidrati, 35g proteine, 25g grassi)."  # Risposta per la dieta per aumento di massa
 
   utter_dieta_equilibrata:
-    - text: "Ecco un esempio di dieta equilibrata:\n\n**Colazione**: Yogurt con frutta e cereali.\n**Spuntino**: Carote e hummus.\n**Pranzo**: Quinoa con legumi e verdure.\n**Spuntino**: 1 pera.\n**Cena**: Pollo al forno con insalata."
+    - text: "Ecco un esempio di dieta equilibrata: Colazione - yogurt con frutta, Pranzo - insalata mista, Cena - pesce con verdure."  # Risposta per la dieta equilibrata
 
   utter_dieta_vegana:
-    - text: "Ecco un esempio di dieta vegana:\n\n**Colazione**: Smoothie di banana e spinaci.\n**Spuntino**: Frutta fresca.\n**Pranzo**: Insalata di ceci con pomodori e cetrioli.\n**Spuntino**: Popcorn senza burro.\n**Cena**: Tofu saltato con verdure."
+    - text: "Ecco un esempio di dieta vegana: Colazione - smoothie di banana e spinaci (250 kcal, 40g carboidrati, 5g proteine, 5g grassi), Pranzo - burger di lenticchie con insalata (500 kcal, 60g carboidrati, 25g proteine, 15g grassi), Cena - curry di ceci con riso basmati (600 kcal, 80g carboidrati, 20g proteine, 15g grassi)."  # Risposta per la dieta vegana
 
   utter_dieta_energia:
-    - text: "Ecco un esempio di dieta per migliorare l'energia:\n\n**Colazione**: Porridge di avena con frutta secca.\n**Spuntino**: Mandorle.\n**Pranzo**: Insalata di quinoa con avocado e fagioli neri.\n**Spuntino**: Yogurt greco.\n**Cena**: Salmone con asparagi."
+    - text: "Ecco un esempio di dieta per migliorare l'energia: Colazione - toast integrale con avocado (300 kcal, 30g carboidrati, 10g proteine, 15g grassi), Pranzo - insalata di pollo e quinoa (500 kcal, 50g carboidrati, 30g proteine, 20g grassi), Cena - pesce al forno con verdure (400 kcal, 20g carboidrati, 35g proteine, 15g grassi)."  # Risposta per la dieta per migliorare l'energia
 
-  utter_scheda_braccia:
-    - text: "Ecco una scheda di allenamento per le braccia:\n\n**Esercizi**:\n1. Curl con manubri: 3 serie da 12 ripetizioni\n   - Spiegazione: Questo esercizio isola i bicipiti e aiuta a costruire forza e massa muscolare.\n2. Estensioni tricipiti: 3 serie da 12 ripetizioni\n   - Spiegazione: Lavora sui tricipiti, migliorando la forza e la definizione della parte posteriore del braccio.\n3. Flessioni: 3 serie da 10 ripetizioni\n   - Spiegazione: Esercizio composto che coinvolge petto, spalle e tricipiti.\n4. Piegamenti sulle braccia: 3 serie da 10 ripetizioni\n   - Spiegazione: Ottimo per sviluppare la forza del core e delle spalle.\n\n**Note**: Riposa 60 secondi tra le serie."
+  utter_dieta_keto:
+    - text: "Ecco un esempio di dieta keto: Colazione - uova strapazzate con avocado, Pranzo - insalata di pollo con olio d'oliva, Cena - salmone al forno con broccoli."
+    - text: "Ecco un piano alimentare keto: Colazione - yogurt greco con noci, Pranzo - hamburger senza pane con insalata, Cena - pollo al curry con cavolfiore."
+    - text: "Ecco un esempio di dieta keto: Colazione - omelette con formaggio e spinaci, Pranzo - insalata di tonno con avocado, Cena - bistecca con asparagi."
 
+  # Schede di allenamento
   utter_scheda_gambe:
-    - text: "Ecco una scheda di allenamento per le gambe:\n\n**Esercizi**:\n1. Squat: 4 serie da 10 ripetizioni\n   - Spiegazione: Esercizio fondamentale per le gambe che coinvolge quadricipiti, glutei e muscoli posteriori della coscia.\n2. Affondi: 3 serie da 12 ripetizioni per gamba\n   - Spiegazione: Aiuta a migliorare l'equilibrio e la stabilità, lavorando su quadricipiti e glutei.\n3. Leg press: 3 serie da 10 ripetizioni\n   - Spiegazione: Esercizio che isola i muscoli delle gambe, permettendo di caricare pesi maggiori.\n4. Stacchi da terra: 3 serie da 10 ripetizioni\n   - Spiegazione: Coinvolge diversi gruppi muscolari, inclusi schiena, glutei e gambe.\n\n**Note**: Assicurati di mantenere una buona forma durante gli esercizi."
+    - text: "Ecco una scheda di allenamento per le gambe: 3 serie di squat, 3 serie di affondi, 3 serie di leg press."
 
   utter_scheda_petto:
-    - text: "Ecco una scheda di allenamento per il petto:\n\n**Esercizi**:\n1. Panca piana: 4 serie da 10 ripetizioni\n   - Spiegazione: Esercizio base per sviluppare la forza del petto e dei tricipiti.\n2. Panca inclinata: 3 serie da 10 ripetizioni\n   - Spiegazione: Targetizza la parte superiore del petto, migliorando la definizione.\n3. Croci con manubri: 3 serie da 12 ripetizioni\n   - Spiegazione: Esercizio di isolamento per il petto che migliora la flessibilità e la forza.\n4. Flessioni: 3 serie da 10 ripetizioni\n   - Spiegazione: Ottimo per lavorare su petto, spalle e tricipiti.\n\n**Note**: Concentrati sulla contrazione muscolare."
+    - text: "Ecco una scheda di allenamento per il petto: 3 serie di panca piana, 3 serie di panca inclinata, 3 serie di chest fly."
+
+  utter_scheda_braccia:
+    - text: "Ecco una scheda di allenamento per le braccia: 3 serie di curl con manubri, 3 serie di estensioni tricipiti."
 
   utter_scheda_schiena:
-    - text: "Ecco una scheda di allenamento per la schiena:\n\n**Esercizi**:\n1. Rematore con manubri: 4 serie da 10 ripetizioni\n   - Spiegazione: Esercizio fondamentale per sviluppare la forza della schiena e migliorare la postura.\n2. Lat machine: 3 serie da 10 ripetizioni\n   - Spiegazione: Targetizza i muscoli della schiena superiore, migliorando la larghezza della schiena.\n3. Stacchi da terra: 3 serie da 10 ripetizioni\n   - Spiegazione: Coinvolge diversi gruppi muscolari, inclusi schiena, glutei e gambe.\n4. Pull-up: 3 serie da 8 ripetizioni\n   - Spiegazione: Esercizio complesso che sviluppa forza e massa muscolare nella schiena.\n\n**Note**: Mantieni la schiena dritta durante gli esercizi."
+    - text: "Ecco una scheda di allenamento per la schiena: 3 serie di rematore con manubri, 3 serie di lat machine, 3 serie di stacchi da terra."
 
   utter_scheda_addominali:
-    - text: "Ecco una scheda di allenamento per gli addominali:\n\n**Esercizi**:\n1. Crunch: 3 serie da 15 ripetizioni\n   - Spiegazione: Esercizio base per rafforzare i muscoli addominali superiori.\n2. Plank: 3 serie da 30 secondi\n   - Spiegazione: Ottimo per stabilizzare il core e migliorare la forza addominale complessiva.\n3. Sollevamento gambe: 3 serie da 12 ripetizioni\n   - Spiegazione: Targetizza gli addominali inferiori, migliorando la definizione.\n4. Russian twist: 3 serie da 15 ripetizioni per lato\n   - Spiegazione: Esercizio di rotazione che coinvolge obliqui e core.\n\n**Note**: Fai attenzione alla respirazione."
+    - text: "Ecco una scheda di allenamento per gli addominali: 3 serie di crunch, 3 serie di plank, 3 serie di leg raises."
 
   utter_scheda_spalle:
-    - text: "Ecco una scheda di allenamento per le spalle:\n\n**Esercizi**:\n1. Shoulder press: 4 serie da 10 ripetizioni\n   - Spiegazione: Esercizio fondamentale per sviluppare la forza delle spalle.\n2. Alzate laterali: 3 serie da 12 ripetizioni\n   - Spiegazione: Targetizza i muscoli deltoidi laterali, migliorando la larghezza delle spalle.\n3. Alzate frontali: 3 serie da 12 ripetizioni\n   - Spiegazione: Esercizio che coinvolge i muscoli deltoidi anteriori.\n4. Face pull: 3 serie da 12 ripetizioni\n   - Spiegazione: Ottimo per migliorare la postura e la forza della parte posteriore delle spalle.\n\n**Note**: Riscaldati bene prima di iniziare."
+    - text: "Ecco una scheda di allenamento per le spalle: 3 serie di shoulder press, 3 serie di alzate laterali, 3 serie di alzate frontali."
+  
+  utter_scheda_defaticante:
+    - text: "Ecco una scheda di allenamento defaticante: 3 serie di stretching, 3 serie di camminata leggera, 3 serie di yoga."
 
-  utter_allenamento_defaticante:
-    - text: "Ecco un allenamento defaticante:\n\n**Esercizi**:\n1. Stretching del collo: 30 secondi per lato\n2. Stretching delle spalle: 30 secondi per lato\n3. Stretching del tricipite: 30 secondi per lato\n4. Stretching dei quadricipiti: 30 secondi per lato\n5. Stretching dei polpacci: 30 secondi per lato\n6. Respirazione profonda: 5 minuti\n\n**Note**: Mantieni ogni posizione di stretching per almeno 30 secondi e respira profondamente."
+  # Richieste esercizi specifici
+  utter_richiesta_esercizio_defaticante:
+    - text: "Ecco un esercizio defaticante: prova il rilassamento muscolare. Fai 5 minuti di respirazione profonda."
+  
+  utter_richiesta_esercizio_braccia:
+    - text: "Ecco un esercizio per le braccia: prova i curl con i manubri. Fai 3 serie da 12 ripetizioni."
+    - text: "Ecco un esercizio per le braccia: prova le estensioni tricipiti. Fai 3 serie da 10 ripetizioni."
+    - text: "Ecco un esercizio per le braccia: prova le flessioni. Fai 3 serie da 8 ripetizioni."
 
-  utter_domande_scheda_braccia:
-    - text: "Ecco le risposte per le domande sulle schede di allenamento per le braccia:\n\n1. **Numero di serie e ripetizioni per i curl con manubri**: 3 serie da 12 ripetizioni.\n2. **Esecuzione corretta delle estensioni tricipiti**: Assicurati di mantenere il gomito fermo e di estendere completamente il braccio.\n3. **Muscoli coinvolti nelle flessioni**: Petto, spalle e tricipiti."
+  utter_richiesta_esercizio_gambe:
+    - text: "Ecco un esercizio per le gambe: prova gli squat. Fai 3 serie da 10 ripetizioni."
+    - text: "Ecco un esercizio per le gambe: prova gli affondi. Fai 3 serie da 10 ripetizioni."
+    - text: "Ecco un esercizio per le gambe: prova la leg press. Fai 3 serie da 12 ripetizioni."
 
-  utter_domande_scheda_gambe:
-    - text: "Ecco le risposte per le domande sulle schede di allenamento per le gambe:\n\n1. **Serie per gli squat**: 4 serie da 10 ripetizioni.\n2. **Migliorare la forma negli affondi**: Mantieni il ginocchio allineato con la caviglia e il busto eretto.\n3. **Corretta esecuzione per gli stacchi da terra**: Mantieni la schiena dritta e solleva con le gambe."
+  utter_richiesta_esercizio_schiena:
+    - text: "Ecco un esercizio per la schiena: prova il rematore con manubri. Fai 3 serie da 10 ripetizioni."
+    - text: "Ecco un esercizio per la schiena: prova le trazioni. Fai 3 serie da 8 ripetizioni."
+    - text: "Ecco un esercizio per la schiena: prova gli stacchi da terra. Fai 3 serie da 10 ripetizioni."
 
-  utter_domande_scheda_petto:
-    - text: "Ecco le risposte per le domande sulle schede di allenamento per il petto:\n\n1. **Differenza tra panca piana e panca inclinata**: La panca inclinata targetizza la parte superiore del petto.\n2. **Esecuzione corretta delle croci con manubri**: Mantieni i gomiti leggermente piegati e controlla il movimento.\n3. **Ripetizioni per le flessioni**: 3 serie da 10 ripetizioni."
+  utter_richiesta_esercizio_petto:
+    - text: "Ecco un esercizio per il petto: prova la panca piana. Fai 3 serie da 10 ripetizioni."
+    - text: "Ecco un esercizio per il petto: prova la panca inclinata. Fai 3 serie da 10 ripetizioni."
+    - text: "Ecco un esercizio per il petto: prova le flessioni. Fai 3 serie da 8 ripetizioni."
 
-  utter_domande_scheda_schiena:
-    - text: "Ecco le risposte per le domande sulle schede di allenamento per la schiena:\n\n1. **Tecnica corretta per il rematore con manubri**: Mantieni la schiena dritta e tira i manubri verso il petto.\n2. **Migliorare la larghezza della schiena con la lat machine**: Assicurati di allungare completamente le braccia durante il movimento.\n3. **Serie per i pull-up**: 3 serie da 8 ripetizioni."
+  # Saluto finale
+  utter_goodbye:
+    - text: "Grazie per avermi usato! A presto e buon allenamento! 💪 Ricorda di bere molta acqua e di riposare adeguatamente."
 
-  utter_domande_scheda_addominali:
-    - text: "Ecco le risposte per le domande sulle schede di allenamento per gli addominali:\n\n1. **Corretta esecuzione per i crunch**: Solleva le spalle da terra mantenendo la parte bassa della schiena a contatto con il pavimento.\n2. **Mantenere la posizione del plank**: Tieni il corpo in linea retta e contrai il core.\n3. **Muscoli coinvolti nel Russian twist**: Obliqui e addominali."
-
-  utter_domande_scheda_spalle:
-    - text: "Ecco le risposte per le domande sulle schede di allenamento per le spalle:\n\n1. **Tecnica corretta per lo shoulder press**: Mantieni i piedi ben piantati a terra e spingi il peso sopra la testa.\n2. **Eseguire le alzate laterali senza infortuni**: Non sollevare il peso oltre l'altezza delle spalle.\n3. **Ripetizioni per le alzate frontali**: 3 serie da 12 ripetizioni."
-
+# Definizione delle azioni che il bot può eseguire
 actions:
-  - utter_greet
-  - utter_workout_plan
-  - utter_diet_plan
-  - utter_goodbye
-  - utter_richiesta_esercizio
-  - utter_richiesta_ricetta
-  - utter_domande_scheda_braccia
-  - utter_domande_scheda_gambe
-  - utter_domande_scheda_petto
-  - utter_domande_scheda_schiena
-  - utter_domande_scheda_addominali
-  - utter_domande_scheda_spalle
-
-stories:
-- story: richiesta esercizio
-  steps:
-  - intent: RichiestaEsercizio
-  - action: utter_richiesta_esercizio
-
-- story: domande scheda braccia
-  steps:
-  - intent: domande_scheda_braccia
-  - action: utter_domande_scheda_braccia
-
-- story: domande scheda gambe
-  steps:
-  - intent: domande_scheda_gambe
-  - action: utter_domande_scheda_gambe
-
-- story: domande scheda petto
-  steps:
-  - intent: domande_scheda_petto
-  - action: utter_domande_scheda_petto
-
-- story: domande scheda schiena
-  steps:
-  - intent: domande_scheda_schiena
-  - action: utter_domande_scheda_schiena
-
-- story: domande scheda addominali
-  steps:
-  - intent: domande_scheda_addominali
-  - action: utter_domande_scheda_addominali
-
-- story: domande scheda spalle
-  steps:
-  - intent: domande_scheda_spalle
-  - action: utter_domande_scheda_spalle
+  - utter_greet  # Azione per il saluto
+  - utter_workout_plan  # Azione per fornire un piano di allenamento
+  - utter_diet_plan  # Azione per fornire un piano alimentare
+  - utter_dieta_keto  # Azione per fornire informazioni sulla dieta keto
+  - utter_goodbye  # Azione per il saluto finale
+  - utter_scheda_schiena  # Azione per la scheda di allenamento per la schiena
+  - utter_scheda_gambe  # Azione per la scheda di allenamento per le gambe
+  - utter_scheda_petto  # Azione per la scheda di allenamento per il petto
+  - utter_scheda_braccia  # Azione per la scheda di allenamento per le braccia
+  - utter_scheda_addominali  # Azione per la scheda di allenamento per gli addominali
+  - utter_scheda_spalle  # Azione per la scheda di allenamento per le spalle
+  - utter_scheda_defaticante  # Azione per la scheda di allenamento defaticante
+  - utter_richiesta_esercizio_defaticante  # Azione per richiedere un esercizio defaticante
+  - utter_richiesta_esercizio_braccia  # Azione per richiedere esercizi per le braccia
+  - utter_richiesta_esercizio_gambe  # Azione per richiedere esercizi per le gambe
+  - utter_richiesta_esercizio_petto  # Azione per richiedere esercizi per il petto
+  - utter_richiesta_esercizio_schiena  # Azione per richiedere esercizi per la schiena

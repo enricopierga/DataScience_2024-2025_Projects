@@ -1,5 +1,7 @@
 version: "3.1"
 nlu:
+
+#Saluto inizio
 - intent: greet
   examples: |
     - Ciao
@@ -7,96 +9,160 @@ nlu:
     - Hey
     - Salve
 
+#Intenti allenamento e dieta generico
 - intent: request_workout_plan
   examples: |
     - Voglio un piano di allenamento settimanale
     - Puoi crearmi un programma di esercizi?
     - Aiutami a pianificare gli allenamenti per questa settimana
     - Piano per allenarmi questa settimana
+    - Vorrei un piano per allenarmi
+    - Vorrei un piano settimanale 
 
 - intent: request_diet_plan
   examples: |
     - Puoi darmi una dieta settimanale?
     - Ho bisogno di un piano alimentare
     - Suggerimenti per una dieta sana?
-    - Dammi una dieta per perdere peso
+    - Puoi suggerirmi una dieta per migliorare la mia salute?
+    - Dammi idee per pasti sani durante la settimana
 
-- intent: goodbye
-  examples: |
-    - Arrivederci
-    - Grazie, ciao
-    - A presto
 
-- intent: RichiestaEsercizio
+#Intenti diete specifiche
+- intent: RichiestaDietaVegana
   examples: |
-    - Dammi un esercizio per le braccia
-    - Ho bisogno di un allenamento per le gambe
-    - Qual è un buon esercizio per la schiena?
-    - Mostrami un esercizio per gli addominali
+    - Vorrei una dieta vegana
+    - Mi consiglieresti una dieta vegana?
 
-- intent: RichiestaRicetta
+  
+- intent: RichiestaDietaKeto
   examples: |
-    - Come preparo lo yogurt magro?
-    - Puoi dirmi la ricetta dello yogurt con frutta e cereali?
-    - Vorrei sapere come fare lo yogurt magro con frutta.
+    - Puoi darmi un piano alimentare keto?
+    - Vorrei sapere di più sulla dieta keto.
+    - Quali sono i cibi permessi nella dieta keto?
+    - Dammi un esempio di dieta keto per una settimana.
 
-- intent: RichiestaDieta
-  examples: |
-    - Puoi dirmi una dieta per perdere peso?
-    - Ho bisogno di una dieta per aumentare massa muscolare.
-    - Qual è una dieta equilibrata?
-    - Dammi un esempio di dieta vegana.
-    - Vorrei una dieta per migliorare la mia energia.
 
-- intent: RichiestaSchedaAllenamento
+
+
+#Intenti schede allenamento
+- intent: RichiestaSchedaAllenamentoSchiena
   examples: |
-    - Puoi darmi una scheda di allenamento per le braccia?
-    - Ho bisogno di un programma per le gambe.
-    - Qual è una buona scheda per il petto?
+    - Puoi darmi una scheda di allenamento per la schiena?
+    - Ho bisogno di un programma per la schiena.
+    - Qual è una buona scheda per la schiena?
     - Dammi un allenamento per la schiena.
-    - Vorrei una scheda per gli addominali.
-    - Puoi suggerirmi un allenamento per le spalle?
+    - Vorrei una scheda per la schiena.
+
 
 - intent: RichiestaAllenamentoDefaticante
   examples: |
+    - Sono stanco dopo l'allenamento di ieri, cosa mi consigli?
     - Puoi darmi un allenamento defaticante?
     - Ho bisogno di un programma per defaticare i muscoli.
     - Quali esercizi posso fare per defaticare dopo l'allenamento?
     - Dammi un allenamento di stretching.
     - Vorrei sapere come defaticare dopo una corsa.
 
-- intent: domande_scheda_braccia
+- intent: RichiestaSchedaAllenamentoGambe
   examples: |
-    - Qual è il numero di serie e ripetizioni per i curl con manubri?
-    - Come posso eseguire correttamente le estensioni tricipiti?
-    - Quali muscoli vengono coinvolti nelle flessioni?
+    - Puoi darmi una scheda di allenamento per le gambe?
+    - Ho bisogno di un programma per le gambe.
+    - Qual è una buona scheda per le gambe?
+    - Dammi un allenamento per le gambe.
+    - Vorrei una scheda per le gambe.
 
-- intent: domande_scheda_gambe
+- intent: RichiestaSchedaAllenamentoPetto
   examples: |
-    - Quante serie devo fare per gli squat?
-    - Come posso migliorare la mia forma negli affondi?
-    - Qual è la corretta esecuzione per gli stacchi da terra?
+    - Puoi darmi una scheda di allenamento per il petto?
+    - Ho bisogno di un programma per il petto.
+    - Qual è una buona scheda per il petto?
+    - Dammi un allenamento per il petto.
+    - Vorrei una scheda per il petto.
 
-- intent: domande_scheda_petto
+- intent: RichiestaSchedaAllenamentoBraccia
   examples: |
-    - Qual è la differenza tra panca piana e panca inclinata?
-    - Come posso eseguire correttamente le croci con manubri?
-    - Quante ripetizioni dovrei fare per le flessioni?
+    - Puoi darmi una scheda di allenamento per le braccia?
+    - Ho bisogno di un programma per le braccia.
+    - Qual è una buona scheda per le braccia?
+    - Dammi un allenamento per le braccia.
+    - Vorrei una scheda per le braccia.
 
-- intent: domande_scheda_schiena
+- intent: RichiestaSchedaAllenamentoAddominali
   examples: |
-    - Qual è la tecnica corretta per il rematore con manubri?
-    - Come posso migliorare la mia larghezza della schiena con la lat machine?
-    - Quante serie devo fare per i pull-up?
+    - Puoi darmi una scheda di allenamento per gli addominali?
+    - Ho bisogno di un programma per gli addominali.
+    - Qual è una buona scheda per gli addominali?
+    - Dammi un allenamento per gli addominali.
+    - Vorrei una scheda per gli addominali.
 
-- intent: domande_scheda_addominali
+- intent: RichiestaSchedaAllenamentoSpalle
   examples: |
-    - Qual è la corretta esecuzione per i crunch?
-    - Come posso mantenere la posizione del plank per 30 secondi?
-    - Quali muscoli vengono coinvolti nel Russian twist?
+    - Puoi darmi una scheda di allenamento per le spalle?
+    - Ho bisogno di un programma per le spalle.
+    - Qual è una buona scheda per le spalle?
+    - Dammi un allenamento per le spalle.
+    - Vorrei una scheda per le spalle.
 
-- intent: domande_scheda_spalle
+
+
+
+#Intenti esercizi specifici
+- intent: RichiestaEsercizioDefaticante
   examples: |
-    - Qual è la tecnica corretta per lo shoulder press?
-    - Come posso eseguire le alzate laterali senza infortuni?
-    - Quante ripetizioni dovrei fare per le alzate frontali?
+    - Dammi un esercizio defaticante
+    - Qual è un buon esercizio per defaticare?
+    - Mostrami un esercizio per rilassare i muscoli
+    - Puoi suggerirmi un esercizio per defaticare dopo l'allenamento?
+    - Qual è il miglior esercizio per defaticare?
+
+- intent: RichiestaEsercizioBraccia
+  examples: |
+    - Dammi un esercizio per le braccia
+    - Qual è un buon esercizio per le braccia?
+    - Puoi suggerirmi un esercizio per le spalle?
+    - Dammi un esercizio per le braccia da fare a casa
+    - Qual è un buon esercizio per tonificare le braccia?
+
+- intent: RichiestaEsercizioGambe
+  examples: |
+    - Dammi un esercizio per le gambe
+    - Qual è un buon esercizio per le gambe?
+    - Mostrami un esercizio per i quadricipiti
+    - Dammi un esercizio per le gambe da fare a casa
+    - Qual è un buon esercizio per tonificare le gambe?
+
+- intent: RichiestaEsercizioPetto
+  examples: |
+    - Dammi un esercizio per il petto
+    - Qual è un buon esercizio per il petto?
+    - Mostrami un esercizio per le distensioni su panca
+    - Puoi suggerirmi un esercizio per i pettorali?
+    - Qual è il miglior esercizio per il petto?
+    - Dammi un esercizio per il petto da fare a casa
+    - Qual è un buon esercizio per tonificare il petto?
+
+- intent: RichiestaEsercizioSchiena
+  examples: |
+    - Dammi un esercizio per la schiena
+    - Qual è un buon esercizio per la schiena?
+    - Puoi suggerirmi un esercizio per la schiena?
+    - Qual è il miglior esercizio per la schiena?
+    - Dammi un esercizio per la schiena da fare a casa
+    - Qual è un buon esercizio per tonificare la schiena?
+
+#Saluto fine
+- intent: goodbye
+  examples: |
+    - Arrivederci
+    - Ciao, ci vediamo
+    - Grazie mille
+    - Grazie
+    - Grazie, ciao
+    - A presto
+    - A presto, ciao
+    - A presto, ci vediamo
+    - A presto, ci vediamo domani
+    - A presto, ci vediamo la prossima settimana
+    - Grazie, ciao
+    - A presto
