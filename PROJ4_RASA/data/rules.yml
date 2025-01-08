@@ -1,19 +1,5 @@
 version: "3.1"
 rules:
-- rule: Avvia la workout form
-  steps:
-    - intent: request_workout_plan
-    - action: workout_form
-    - active_loop: workout_form
-
-- rule: Completa la workout form
-  condition:
-    - active_loop: workout_form
-  steps:
-    - action: workout_form
-    - active_loop: null
-    - action: action_submit_workout_form
-
   # Regole per il saluto
   - rule: Rispondi al saluto
     steps:
@@ -21,7 +7,7 @@ rules:
       - action: utter_greet
 
   # Regole per piani di allenamento
-  - rule: Richiesta piano di allenamento
+  - rule: Richiesta piano di allenamento generico
     steps:
       - intent: request_workout_plan
       - action: utter_workout_plan
@@ -105,3 +91,24 @@ rules:
     steps:
       - intent: goodbye
       - action: utter_goodbye
+
+  #Form Rules
+  - rule: Attiva il form per raccogliere informazioni sull'utente
+    steps:
+      - intent: request_personalized_workout
+      - action: fitness_form
+      - active_loop: fitness_form
+
+  - rule: Completa il form e fornisce esercizi
+    condition:
+      - active_loop: fitness_form
+    steps:
+      - action: fitness_form
+      - active_loop: null #disattiva il form
+      - action: action_create_personalized_workout
+      - action: utter_ask_more_details
+
+  - rule: Fornisci dettagli dopo richiesta
+    steps:
+      - intent: affirm
+      - action: action_provide_exercises

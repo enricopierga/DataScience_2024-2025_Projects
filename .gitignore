@@ -10,3 +10,5 @@ venv/
 110m_cultural/
 
 .DS_Store
+.rasa
+cache.db
