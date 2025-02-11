@@ -12,7 +12,6 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 📂 **Cartella:** `PROJ1_DescAnalysis_Class_Cluster_Forec`  
 📜 **Tecnologie utilizzate:** Python, Pandas, Scikit-learn, Matplotlib, Seaborn  
-
 ---
 
 ### 2️⃣ **Social Network Analysis sui Trasferimenti Calcistici**  
@@ -77,9 +76,9 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 |Nome | GitHub |
 |-----------|--------|
-| 🐬 `Bellante Luca` | [Click here](https://github.com/lucabellantee) |
-| 🦀 `Bruglia Agnese` | [Click here](https://github.com/AgneseBruglia) |
-| 🐳 `Visi Andrea` | [Click here](https://github.com/Andreavisi1) |
+| 🤿 `De Grazia Davide` | [Click here](https://github.com/davidedg11) |
+| ⛳️ `Piergallini Enrico` | [Click here](https://github.com/enricopierga) |
+| 🛹 `Visi Andrea` | [Click here](https://github.com/Andreavisi1) |
 
 <p align="right">(<a href="#readme-top">Torna su</a>)</p>
 
@@ -95,3 +94,6 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 ![Stars](https://img.shields.io/github/stars/enricopierga/DataScience_2024-2025_Projects?style=social)
 ![Release](https://img.shields.io/github/release/enricopierga/DataScience_2024-2025_Projects.svg)
 ![Open Issues](https://img.shields.io/github/issues/enricopierga/DataScience_2024-2025_Projects)
+
+<p align="right">(<a href="#readme-top">Torna su</a>)</p>
+
