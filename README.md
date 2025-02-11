@@ -5,7 +5,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 ## 🚀 Progetti
 
-### 1️⃣ **Apple Stocks Time Series Analysis & Tennis Match Classification & Clustering**  
+### 1️⃣ **Apple Stocks Time Series Analysis & Tennis Match Classification and Clustering**  
 📌 **Descrizione:**  
 - Analisi delle **azioni Apple** con tecniche di **time series forecasting**;
 - **Classificazione e clustering** su un dataset di **partite ATP di tennis**, con tecniche di **machine learning**.
