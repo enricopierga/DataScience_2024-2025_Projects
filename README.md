@@ -10,7 +10,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 - Analisi delle **azioni Apple** con tecniche di **time series forecasting**;
 - **Classificazione e clustering** su un dataset di **partite ATP di tennis**, con tecniche di **machine learning**.
 
-📂 **Cartella:** `PROJ1_`  
+📂 **Cartella:** `PROJ1_DescAnalysis_Class_Cluster_Forec`  
 📜 **Tecnologie utilizzate:** Python, Pandas, Scikit-learn, Matplotlib, Seaborn  
 
 ---
@@ -53,6 +53,8 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 📂 **Cartella:** `PROJ5_Word2Vec`  
 📜 **Tecnologie utilizzate:** Python, NLTK, SpaCy, Hugging Face  
 
+<p align="right">(<a href="#readme-top">Torna su</a>)</p>
+
 ---
 
 ## 📌 Come Utilizzare la repository  
@@ -65,7 +67,9 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
  
 3. **Installare le dipendenze**, se necessario (nei vari notebook sono presenti celle atte a ciò).
 
-4. I risultati principali e le visualizzazioni generate sono inclusi nei notebook per facilitare la comprensione delle analisi.  
+4. I risultati principali e le visualizzazioni generate sono inclusi nei notebook per facilitare la comprensione delle analisi.
+
+<p align="right">(<a href="#readme-top">Torna su</a>)</p>
 
 ---
 
@@ -81,13 +85,13 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 ### Informazioni aggiuntive
 
-[![GitHub code size in bytes](https://github.com/enricopierga/DataScience_2024-2025_Projects?logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects) 
-[![GitHub commit activity](https://github.com/enricopierga/DataScience_2024-2025_Projects?color=blueviolet&logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects/commits/)
-[![GitHub repo size](https://github.com/enricopierga/DataScience_2024-2025_Projects?logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/enricopierga/DataScience_2024-2025_Projects?logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects) 
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/enricopierga/DataScience_2024-2025_Projects?color=blueviolet&logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects/commits/)
+[![GitHub repo size](https://img.shields.io/github/repo-size/enricopierga/DataScience_2024-2025_Projects?logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects)
 
 ![License](https://img.shields.io/badge/license-blue)
-![Build Status](https://github.com/enricopierga/DataScience_2024-2025_Projects/CI)
+![Build Status](https://img.shields.io/github/workflow/status/enricopierga/DataScience_2024-2025_Projects/CI)
 
-![Stars](https://github.com/enricopierga/DataScience_2024-2025_Projects?style=social)
+![Stars](https://img.shields.io/github/stars/enricopierga/DataScience_2024-2025_Projects?style=social)
 ![Release](https://img.shields.io/github/release/enricopierga/DataScience_2024-2025_Projects.svg)
 ![Open Issues](https://img.shields.io/github/issues/enricopierga/DataScience_2024-2025_Projects)
