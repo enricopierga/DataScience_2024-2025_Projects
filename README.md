@@ -10,7 +10,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 - Analisi delle **azioni Apple** con tecniche di **time series forecasting**;
 - **Classificazione e clustering** su un dataset di **partite ATP di tennis**, con tecniche di **machine learning**.
 
-📂 **Cartella:** `PROJ1_`  
+📂 **Cartella:** `PROJ1_DescAnalysis_Class_Cluster_Forec`  
 📜 **Tecnologie utilizzate:** Python, Pandas, Scikit-learn, Matplotlib, Seaborn  
 
 ---
@@ -41,7 +41,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 - **Intent Recognition & Dialog Management** per un'interazione fluida.
 
 📂 **Cartella:** `PROJ4_Fitbot`  
-📜 **Tecnologie utilizzate:** RASA, Python, NLP, TensorFlow  
+📜 **Tecnologie utilizzate:** RASA, Python
 
 ---
 
