@@ -7,51 +7,51 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 ### 1️⃣ **Apple Stocks Time Series Analysis & Tennis Match Classification & Clustering**  
 📌 **Descrizione:**  
-- Analisi delle **azioni Apple** con tecniche di **time series forecasting**  
-- **Classificazione e clustering** su un dataset di **partite ATP di tennis**, con tecniche di **machine learning**  
+- Analisi delle **azioni Apple** con tecniche di **time series forecasting**;
+- **Classificazione e clustering** su un dataset di **partite ATP di tennis**, con tecniche di **machine learning**.
 
-📂 **Cartella:** `01_TimeSeries_TennisClustering`  
-📜 **Tecnologie:** Python, Pandas, Scikit-learn, Matplotlib, Seaborn  
+📂 **Cartella:** `PROJ1_`  
+📜 **Tecnologie utilizzate:** Python, Pandas, Scikit-learn, Matplotlib, Seaborn  
 
 ---
 
 ### 2️⃣ **Social Network Analysis sui Trasferimenti Calcistici**  
 📌 **Descrizione:**  
-- Creazione di una **rete basata sui trasferimenti di calciatori** utilizzando dati di **Transfermarkt**  
-- Analisi delle **connessioni tra club** e dei principali hub della rete  
+- Creazione di una **rete basata sui trasferimenti di calciatori** utilizzando dati ufficiali di **Transfermarkt**;
+- Analisi delle **connessioni tra club** e dei principali hub della rete.
 
-📂 **Cartella:** `02_SNA_Transfers`  
-📜 **Tecnologie:** Python, NetworkX, Gephi, Matplotlib  
+📂 **Cartella:** `PROJ2_Social-Network-Analysis`  
+📜 **Tecnologie utilizzate:** Python, NetworkX, Gephi, Matplotlib  
 
 ---
 
 ### 3️⃣ **Sentiment Analysis con BERT**  
 📌 **Descrizione:**  
-- Sfruttamento di **modelli basati su BERT** per effettuare analisi del sentiment su dataset testuali  
-- **Fine-tuning del modello** per migliorare le performance  
+- Sfruttamento di **modelli basati su BERT** per effettuare analisi del sentiment su dataset testuali;
+- **Fine-tuning del modello** per migliorare le performance.
 
-📂 **Cartella:** `03_SentimentAnalysis_BERT`  
-📜 **Tecnologie:** Python, Hugging Face Transformers, PyTorch, TensorFlow  
+📂 **Cartella:** `PROJ3_BERT`  
+📜 **Tecnologie utilizzate:** Python, Hugging Face Transformers, PyTorch, TensorFlow
 
 ---
 
 ### 4️⃣ **FitBot - Chatbot per il Fitness con RASA**  
 📌 **Descrizione:**  
-- Creazione di un **chatbot intelligente** con **RASA** per fornire suggerimenti su allenamenti e nutrizione  
-- **Intent Recognition & Dialog Management** per un'interazione fluida  
+- Creazione di un **chatbot intelligente** con **RASA** per fornire suggerimenti su allenamenti e nutrizione;
+- **Intent Recognition & Dialog Management** per un'interazione fluida.
 
-📂 **Cartella:** `04_FitBot_RASA`  
-📜 **Tecnologie:** RASA, Python, NLP, TensorFlow  
+📂 **Cartella:** `PROJ4_Fitbot`  
+📜 **Tecnologie utilizzate:** RASA, Python, NLP, TensorFlow  
 
 ---
 
 ### 5️⃣ **Text Classification & NLP Applications**  
 📌 **Descrizione:**  
-- **Classificazione del testo** e altri utilizzi avanzati di **Natural Language Processing (NLP)**  
-- Analisi ed estrazione di informazioni da dataset testuali con librerie avanzate  
+- **Classificazione del testo** e altri utilizzi avanzati di **Natural Language Processing (NLP)**;
+- Analisi ed estrazione di informazioni da dataset testuali con librerie avanzate.
 
-📂 **Cartella:** `05_TextClassification_NLP`  
-📜 **Tecnologie:** Python, NLTK, SpaCy, Hugging Face  
+📂 **Cartella:** `PROJ5_Word2Vec`  
+📜 **Tecnologie utilizzate:** Python, NLTK, SpaCy, Hugging Face  
 
 ---
 
