@@ -10,7 +10,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 - Analisi delle **azioni Apple** con tecniche di **time series forecasting**;
 - **Classificazione e clustering** su un dataset di **partite ATP di tennis**, con tecniche di **machine learning**.
 
-📂 **Cartella:** `PROJ1_DescAnalysis_Class_Cluster_Forec`  
+📂 **Cartella:** `PROJ1_`  
 📜 **Tecnologie utilizzate:** Python, Pandas, Scikit-learn, Matplotlib, Seaborn  
 
 ---
@@ -31,7 +31,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 - **Fine-tuning del modello** per migliorare le performance.
 
 📂 **Cartella:** `PROJ3_BERT`  
-📜 **Tecnologie utilizzate:** Python, BERT
+📜 **Tecnologie utilizzate:** Python, Hugging Face Transformers, PyTorch, TensorFlow
 
 ---
 
@@ -41,7 +41,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 - **Intent Recognition & Dialog Management** per un'interazione fluida.
 
 📂 **Cartella:** `PROJ4_Fitbot`  
-📜 **Tecnologie utilizzate:** RASA, Python
+📜 **Tecnologie utilizzate:** RASA, Python, NLP, TensorFlow  
 
 ---
 
@@ -51,7 +51,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 - Analisi ed estrazione di informazioni da dataset testuali con librerie avanzate.
 
 📂 **Cartella:** `PROJ5_Word2Vec`  
-📜 **Tecnologie utilizzate:** Python, NLTK 
+📜 **Tecnologie utilizzate:** Python, NLTK, SpaCy, Hugging Face  
 
 ---
 
@@ -66,3 +66,28 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 3. **Installare le dipendenze**, se necessario (nei vari notebook sono presenti celle atte a ciò).
 
 4. I risultati principali e le visualizzazioni generate sono inclusi nei notebook per facilitare la comprensione delle analisi.  
+
+---
+
+# 🤝 Contributi
+
+|Nome | GitHub |
+|-----------|--------|
+| 🐬 `Bellante Luca` | [Click here](https://github.com/lucabellantee) |
+| 🦀 `Bruglia Agnese` | [Click here](https://github.com/AgneseBruglia) |
+| 🐳 `Visi Andrea` | [Click here](https://github.com/Andreavisi1) |
+
+<p align="right">(<a href="#readme-top">Torna su</a>)</p>
+
+### Informazioni aggiuntive
+
+[![GitHub code size in bytes](https://github.com/enricopierga/DataScience_2024-2025_Projects?logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects) 
+[![GitHub commit activity](https://github.com/enricopierga/DataScience_2024-2025_Projects?color=blueviolet&logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects/commits/)
+[![GitHub repo size](https://github.com/enricopierga/DataScience_2024-2025_Projects?logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects)
+
+![License](https://img.shields.io/badge/license-blue)
+![Build Status](https://github.com/enricopierga/DataScience_2024-2025_Projects/CI)
+
+![Stars](https://github.com/enricopierga/DataScience_2024-2025_Projects?style=social)
+![Release](https://img.shields.io/github/release/enricopierga/DataScience_2024-2025_Projects.svg)
+![Open Issues](https://img.shields.io/github/issues/enricopierga/DataScience_2024-2025_Projects)
