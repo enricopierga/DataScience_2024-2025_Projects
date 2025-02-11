@@ -83,6 +83,8 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 <p align="right">(<a href="#readme-top">Torna su</a>)</p>
 
+---
+
 ### Informazioni aggiuntive
 
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/enricopierga/DataScience_2024-2025_Projects?logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects) 
