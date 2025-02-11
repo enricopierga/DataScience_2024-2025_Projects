@@ -89,11 +89,11 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 ### Informazioni aggiuntive
 
 [![GitHub repo size](https://img.shields.io/github/repo-size/enricopierga/DataScience_2024-2025_Projects?logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects)
+
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/enricopierga/DataScience_2024-2025_Projects?logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects) 
+
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/enricopierga/DataScience_2024-2025_Projects?color=blueviolet&logo=github)](https://github.com/enricopierga/DataScience_2024-2025_Projects/commits/)
 
-![Stars](https://img.shields.io/github/stars/enricopierga/DataScience_2024-2025_Projects?style=social)
-![Release](https://img.shields.io/github/release/enricopierga/DataScience_2024-2025_Projects)
 ![Open Issues](https://img.shields.io/github/issues/enricopierga/DataScience_2024-2025_Projects)
 
 <p align="right">(<a href="#readme-top">Torna su</a>)</p>
