@@ -12,6 +12,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 📂 **Cartella:** `PROJ1_DescAnalysis_Class_Cluster_Forec`  
 📜 **Tecnologie utilizzate:** Python, Pandas, Scikit-learn, Matplotlib, Seaborn  
+
 ---
 
 ### 2️⃣ **Social Network Analysis sui Trasferimenti Calcistici**  
