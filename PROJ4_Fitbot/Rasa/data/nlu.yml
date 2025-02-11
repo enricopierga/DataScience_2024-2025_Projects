@@ -1,0 +1,238 @@
+version: "3.1"
+nlu:
+  - intent: start
+    examples: |
+      - /start
+      - /starc
+      - Start
+      - /START
+      - /sTaRt
+
+  - intent: stop
+    examples: |
+      - /stop
+      - /StoP
+      - /sToP
+
+  - intent: greet
+    examples: |
+      - Ciao
+      - Buongiorno
+      - Hey
+      - Salve
+      - Help
+      - help
+      - Ciao!
+      - Cosa posso fare con questo bot?
+      - Posso fare altro?
+      - Quali comandi ci sono?
+      - Ciao Fitbot!
+      - Hey Fitbot
+
+  # Intento: Richiesta piano di allenamento
+  - intent: request_workout_plan
+    examples: |
+      - Ho bisogno di un piano di allenamento
+      - Puoi crearmi un piano di esercizi?
+      - Crea un programma di allenamento settimanale per me
+      - Suggerimenti per un piano di allenamento settimanale?
+      - Aiutami a pianificare un piano di allenamento
+      - Dammi un esempio di piano di allenamento settimanale
+      - Vorrei migliorare la mia routine di allenamento, hai un piano?
+      - Allenamento generico
+      - Piano di esercizi generico
+      - Piano generico di allenamento
+
+  # Intenti schede allenamento
+  - intent: RichiestaSchedaAllenamentoSchiena
+    examples: |
+      - Puoi darmi una scheda di allenamento per la schiena?
+      - Ho bisogno di un programma per la schiena.
+      - Qual è una buona scheda per la schiena?
+      - Dammi un allenamento per la schiena.
+      - Vorrei una scheda per la schiena.
+      - Scheda schiena
+      - Dammi una scheda per la schiena
+      - Porgramma schiena
+      - Oggi voglio allenare la schiena
+      - Voglio allenare la schiena
+      - Allenamento schiena
+
+  - intent: RichiestaAllenamentoDefaticante
+    examples: |
+      - Sono stanco dopo l'allenamento di ieri, cosa mi consigli?
+      - Puoi darmi un allenamento defaticante?
+      - Ho bisogno di un programma per defaticare i muscoli.
+      - Quali esercizi posso fare per defaticare dopo l'allenamento?
+      - Dammi un allenamento di stretching.
+      - Vorrei sapere come defaticare dopo una corsa.
+      - Mi sento stanco
+      - Ho dolori muscolari
+      - Ho forti dolori muscolari, vorrei recuperare
+      - Vorrei allenarmi per recuperare
+      - Ho dolori muscolari dopo l'allenamento di ieri
+
+  - intent: RichiestaSchedaAllenamentoGambe
+    examples: |
+      - Puoi darmi una scheda di allenamento per le gambe?
+      - Ho bisogno di un programma per le gambe.
+      - Qual è una buona scheda per le gambe?
+      - Dammi un allenamento per le gambe.
+      - Vorrei una scheda per le gambe.
+      - Scheda gambe
+      - Voglio allenare le gambe
+      - Allenamento scheda gambe
+
+  - intent: RichiestaSchedaAllenamentoPetto
+    examples: |
+      - Puoi darmi una scheda di allenamento per il petto?
+      - Ho bisogno di un programma per il petto.
+      - Qual è una buona scheda per il petto?
+      - Dammi un allenamento per il petto.
+      - Vorrei una scheda per il petto.
+      - Scheda petto
+      - Scheda allenamento petto
+
+  - intent: RichiestaSchedaAllenamentoBraccia
+    examples: |
+      - Puoi darmi una scheda di allenamento per le braccia?
+      - Ho bisogno di un programma per le braccia.
+      - Qual è una buona scheda per le braccia?
+      - Dammi un allenamento per le braccia.
+      - Vorrei una scheda per le braccia.
+      - Scheda braccia
+      - Scheda allenamento braccia
+
+  - intent: RichiestaSchedaAllenamentoAddominali
+    examples: |
+      - Puoi darmi una scheda di allenamento per gli addominali?
+      - Ho bisogno di un programma per gli addominali.
+      - Qual è una buona scheda per gli addominali?
+      - Dammi un allenamento per gli addominali.
+      - Vorrei una scheda per gli addominali.
+      - Vorrei fare addominali
+      - Scheda addominali
+      - Oggi voglio una scheda addominali
+
+  - intent: RichiestaSchedaAllenamentoSpalle
+    examples: |
+      - Puoi darmi una scheda di allenamento per le spalle?
+      - Ho bisogno di un programma per le spalle.
+      - Qual è una buona scheda per le spalle?
+      - Dammi un allenamento per le spalle.
+      - Vorrei una scheda per le spalle.
+      - Scheda spalle
+      - Oggi voglio allenare le spalle
+      - Vorrei allenare le spalle
+
+  - intent: RichiestaEsercizioDefaticante
+    examples: |
+      - Dammi un esercizio defaticante
+      - Qual è un buon esercizio per defaticare?
+      - Mostrami un esercizio per rilassare i muscoli
+      - Puoi suggerirmi un esercizio per defaticare dopo l'allenamento?
+      - Qual è il miglior esercizio per defaticare?
+      - Esercizio defaticante
+
+  - intent: RichiestaEsercizioBraccia
+    examples: |
+      - Dammi un esercizio per le braccia
+      - Qual è un buon esercizio per le braccia?
+      - Puoi suggerirmi un esercizio per le spalle?
+      - Dammi un esercizio per le braccia da fare a casa
+      - Qual è un buon esercizio per tonificare le braccia?
+
+  - intent: RichiestaEsercizioGambe
+    examples: |
+      - Dammi un esercizio per le gambe
+      - Qual è un buon esercizio per le gambe?
+      - Mostrami un esercizio per i quadricipiti
+      - Dammi un esercizio per le gambe da fare a casa
+      - Qual è un buon esercizio per tonificare le gambe?
+
+  - intent: RichiestaEsercizioPetto
+    examples: |
+      - Dammi un esercizio per il petto
+      - Qual è un buon esercizio per il petto?
+      - Mostrami un esercizio per le distensioni su panca
+      - Puoi suggerirmi un esercizio per i pettorali?
+      - Qual è il miglior esercizio per il petto?
+      - Dammi un esercizio per il petto da fare a casa
+      - Qual è un buon esercizio per tonificare il petto?
+
+  - intent: RichiestaEsercizioSchiena
+    examples: |
+      - Dammi un esercizio per la schiena
+      - Qual è un buon esercizio per la schiena?
+      - Puoi suggerirmi un esercizio per la schiena?
+      - Qual è il miglior esercizio per la schiena?
+      - Dammi un esercizio per la schiena da fare a casa
+      - Qual è un buon esercizio per tonificare la schiena?
+
+  # Saluto fine
+  - intent: goodbye
+    examples: |
+      - Arrivederci
+      - Ciao, ci vediamo
+      - Grazie mille
+      - Grazie
+      - Grazie, ciao
+      - A presto
+      - A presto, ciao
+      - A presto, ci vediamo
+      - A presto, ci vediamo domani
+      - A presto, ci vediamo la prossima settimana
+
+  # Intento: Richiesta personalizzata per obiettivi di fitness, attiva il form
+  - intent: request_personalized_workout
+    examples: |
+      - Puoi creare un piano di allenamento per i miei obiettivi?
+      - Mi serve un programma personalizzato per allenarmi
+      - Ho bisogno di un allenamento su misura
+      - Dammi un esempio di allenamento personalizzato
+      - Crea un programma su misura per il mio livello di esperienza
+      - Creiamo un programma personalizzato di allenamento
+      - Voglio un piano personalizzato
+
+  - intent: affirm
+    examples: |
+      - Sì
+      - Certo
+      - Va bene
+      - Assolutamente
+      - Sicuramente
+
+  - intent: request_personalized_diet
+    examples: |
+      - Vorrei un piano alimentare personalizzato
+      - Dieta adatta a me
+      - Crea una dieta per me
+      - Aiutami a creare una dieta personalizzata
+      - Suggeriscimi un piano alimentare adatto
+
+  # Intento: Conferma dell'utente
+  - intent: affirm
+    examples: |
+      - Sì
+      - si
+      - sì
+      - Certo
+      - Assolutamente sì
+      - Sicuramente
+      - Giusto
+      - Esatto
+      - Ok
+
+  # Intento: Negazione dell'utente
+  - intent: deny
+    examples: |
+      - No
+      - Non ancora
+      - Non credo
+      - Preferisco di no
+      - Assolutamente no
+      - No, grazie
+      - No, non voglio
+      - Non è necessario
+      - Non mi serve
+      - Non ne ho bisogno

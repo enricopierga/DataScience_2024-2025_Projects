@@ -1,0 +1,39 @@
+version: "3.1"
+stories:
+  # Flusso con accettazione dettagli
+  - story: Flusso con accettazione dettagli
+    steps:
+      - intent: request_personalized_workout
+      - action: fitness_form
+      - active_loop: fitness_form
+      - active_loop: null
+      - action: action_submit_fitness_form
+      - action: action_create_personalized_workout
+      - action: utter_ask_more_details
+      - intent: affirm
+      - action: action_provide_exercises
+      - action: action_reset_slots
+
+  # Flusso con negazione dettagli
+  - story: Flusso con negazione dettagli
+    steps:
+      - intent: request_personalized_workout
+      - action: fitness_form
+      - active_loop: fitness_form
+      - active_loop: null
+      - action: action_submit_fitness_form
+      - action: action_create_personalized_workout
+      - action: utter_ask_more_details
+      - intent: deny
+      - action: utter_acknowledge_deny
+      - action: action_reset_slots
+
+  - story: Flusso creazione dieta personalizzata
+    steps:
+      - intent: request_personalized_diet
+      - action: diet_form
+      - active_loop: diet_form
+      - active_loop: null
+      - action: action_submit_diet_form
+      - action: action_provide_diet_plan
+      - action: action_reset_slots

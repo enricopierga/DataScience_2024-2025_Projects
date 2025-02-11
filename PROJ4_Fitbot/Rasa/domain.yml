@@ -1,0 +1,427 @@
+version: "3.1" # Versione del formato del file di dominio
+
+intents:
+  - start
+  - stop
+  - greet # Intento per il saluto
+  - request_workout_plan # Intento per richiedere un piano di allenamento
+  - RichiestaSchedaAllenamentoSchiena # Intento per richiedere una scheda di allenamento per la schiena
+  - RichiestaAllenamentoDefaticante # Intento per richiedere un allenamento defaticante
+  - RichiestaSchedaAllenamentoGambe # Intento per richiedere una scheda di allenamento per le gambe
+  - RichiestaSchedaAllenamentoPetto # Intento per richiedere una scheda di allenamento per il petto
+  - RichiestaSchedaAllenamentoBraccia # Intento per richiedere una scheda di allenamento per le braccia
+  - RichiestaSchedaAllenamentoAddominali # Intento per richiedere una scheda di allenamento per gli addominali
+  - RichiestaSchedaAllenamentoSpalle # Intento per richiedere una scheda di allenamento per le spalle
+  - RichiestaEsercizioBraccia # Intento per richiedere esercizi per le braccia
+  - RichiestaEsercizioGambe # Intento per richiedere esercizi per le gambe
+  - RichiestaEsercizioSchiena # Intento per richiedere esercizi per la schiena
+  - RichiestaEsercizioDefaticante # Intento per richiedere esercizi defaticanti
+  - RichiestaEsercizioPetto # Intento per richiedere esercizi per il petto
+  - goodbye # Intento per il saluto finale
+  - request_personalized_workout
+  - affirm
+  - deny
+  - request_personalized_diet
+
+responses:
+  utter_greet:
+    - text: |
+        👋 Benvenuto su FitBot, il tuo assistente per fitness e benessere! 💪  
+
+        🏋️ Allenamenti:  
+        - Chiedi un piano settimanale generico: "Piano di allenamento settimanale generico"  
+        - Schede per gruppi specifici: "Scheda per il petto" o "Allenamento gambe"  
+        - Piani su misura: "Voglio un programma personalizzato"  
+
+        🍎 Diete:  
+        - Diete personalizzate: "Piano alimentare personalizzato" o "Crea una dieta per me"   
+
+        💪 Esercizi:  
+        - Esercizi mirati: "Esercizio per addominali"  
+        - Defaticanti: "Allenamento rilassante"  
+
+        ❓ Supporto:  
+        - Chiedi aiuto: "Cosa posso fare?"  
+        - Termina: "Ciao!" o "Arrivederci"  
+
+        ⚠️ **Disclaimer**: Le informazioni di FitBot sono a scopo informativo e NON sostituiscono il parere di un medico o professionista qualificato. CONSULTA SEMPRE un esperto.  
+
+        🎯 Inizia ora! Dì cosa desideri, ad esempio: "Piano personalizzato per allenamento su misura!" 💪✨
+
+  utter_ask_fitness_goal:
+    - text: "🏋️ Qual è il tuo obiettivo fitness? 💪\n✨ Puoi scegliere tra:\n🏃 Perdere peso\n💪 Aumentare la massa muscolare\n⚡ Migliorare il tono fisico "
+
+  utter_ask_experience_level:
+    - text: "🧐 Qual è il tuo livello di esperienza con l'allenamento? 🏋️‍♂️\n🌱 Principiante\n🌟 Intermedio\n🔥 Avanzato"
+
+  utter_ask_availability:
+    - text: "⏰ Quante ore a settimana puoi dedicare all'allenamento? 🕒\n Inserisci un numero! 💪"
+
+  utter_workout_plan:
+    - text: |
+        📅 Ecco un piano di allenamento settimanale:  
+        🏋️‍♂️ Lunedì - Petto e tricipiti  
+        🏋️‍♀️ Martedì - Schiena e bicipiti  
+        🦵 Mercoledì - Gambe e polpacci  
+        🏋️‍♂️ Giovedì - Spalle e addominali  
+        🏃‍♂️ Venerdì - Cardio intenso e stretching  
+        🛌 Sabato - Riposo attivo con yoga  
+        💪 Domenica - Allenamento totale corpo libero.
+    - text: |
+        📅 Piano di allenamento settimanale:  
+        🏋️‍♂️ Lunedì - Petto e bicipiti  
+        🏋️‍♀️ Martedì - Schiena e tricipiti  
+        🦵 Mercoledì - Gambe (focus su squat e affondi)  
+        🏋️‍♂️ Giovedì - Spalle e braccia  
+        🏃‍♂️ Venerdì - Cardio e addominali  
+        🛌 Sabato - Riposo completo  
+        💪 Domenica - HIIT (High-Intensity Interval Training).
+    - text: |
+        📅 Prova questo piano settimanale personalizzato:  
+        🏋️‍♂️ Lunedì - Panca piana, croci su panca e tricipiti  
+        🏋️‍♀️ Martedì - Trazioni, rematore e bicipiti  
+        🦵 Mercoledì - Squat, stacchi e leg press  
+        🏋️‍♂️ Giovedì - Alzate laterali, military press e addominali  
+        🏃‍♂️ Venerdì - Corsa a intervalli e stretching dinamico  
+        🛌 Sabato - Yoga e rilassamento muscolare  
+        💪 Domenica - Circuito corpo libero (push-up, squat, plank).
+
+  utter_scheda_defaticante:
+    - text: |
+        🧘‍♂️ Ecco una scheda defaticante per rilassarti dopo l'allenamento:  
+        🕒 10 minuti di stretching leggero (gambe, braccia, schiena)  
+        🚶‍♂️ 5 minuti di camminata rilassante a ritmo lento.  
+        🛌 5 minuti di respirazione profonda e rilassamento.
+    - text: |
+        🧘‍♂️ Suggerimento per defaticare i muscoli:  
+        🕒 15 minuti di yoga rilassante (posizioni come il bambino, il gatto e il cane a testa in giù)  
+        🚶‍♂️ 10 minuti di camminata lenta per recuperare.  
+        🛌 5 minuti di meditazione guidata per rilassare corpo e mente.
+    - text: |
+        🧘‍♂️ Programma defaticante completo:  
+        🕒 5 minuti di stretching statico per le gambe (allungamento quadricipiti e polpacci)  
+        🚶‍♂️ 5 minuti di camminata a ritmo lento concentrandoti sul respiro  
+        🛌 5 minuti di rilassamento muscolare progressivo, sdraiati su un tappetino.
+    - text: |
+        🧘‍♂️ Scheda di defaticamento per un recupero ottimale:  
+        🕒 10 minuti di stretching dinamico (rotazioni delle spalle, torsioni del busto)  
+        🚶‍♂️ 7 minuti di passeggiata rilassante, aumentando gradualmente il ritmo  
+        🛌 3 minuti di respirazione profonda e consapevole.
+    - text: |
+        🧘‍♂️ Ecco un piano di defaticamento personalizzato:  
+        🕒 8 minuti di esercizi di mobilità articolare (caviglie, polsi, collo)  
+        🚶‍♂️ 6 minuti di camminata rilassante su un terreno pianeggiante  
+        🛌 4 minuti di stretching statico su un tappetino per schiena e spalle.
+
+  # Schede di allenamento
+  utter_scheda_gambe:
+    - text: |
+        Ecco una scheda di allenamento per le gambe:
+        - 4 serie di squat (10-12 ripetizioni)
+        - 3 serie di affondi alternati (10 ripetizioni per gamba)
+        - 3 serie di leg press (12-15 ripetizioni)
+        - 3 serie di stacchi rumeni con manubri (10 ripetizioni)
+        - 3 serie di calf raises (15-20 ripetizioni).
+    - text: |
+        Prova questa scheda per rafforzare le gambe:
+        - 3 serie di front squat (10 ripetizioni)
+        - 3 serie di affondi bulgari (10 ripetizioni per gamba)
+        - 4 serie di hack squat alla macchina (12 ripetizioni)
+        - 3 serie di leg curl sdraiato (15 ripetizioni)
+        - 3 serie di sollevamenti sui polpacci in piedi (20 ripetizioni).
+
+  utter_scheda_petto:
+    - text: |
+        Ecco una scheda di allenamento per il petto:
+        - 4 serie di panca piana con bilanciere (8-10 ripetizioni)
+        - 3 serie di panca inclinata con manubri (10 ripetizioni)
+        - 3 serie di chest fly su panca inclinata (12 ripetizioni)
+        - 3 serie di dip alle parallele (10-12 ripetizioni).
+    - text: |
+        Prova questo allenamento per il petto:
+        - 4 serie di panca piana con bilanciere (8 ripetizioni)
+        - 4 serie di croci ai cavi (12 ripetizioni)
+        - 3 serie di panca inclinata alla Smith machine (10 ripetizioni)
+        - 3 serie di pull-over con manubrio (12 ripetizioni).
+
+  utter_scheda_braccia:
+    - text: |
+        Ecco una scheda di allenamento per le braccia:
+        - 3 serie di curl con manubri alternati (12 ripetizioni)
+        - 3 serie di estensioni tricipiti sopra la testa (10 ripetizioni)
+        - 3 serie di hammer curl (12 ripetizioni)
+        - 3 serie di push-up stretti (15 ripetizioni).
+    - text: |
+        Ecco un'altra scheda per le braccia:
+        - 4 serie di curl con bilanciere (10 ripetizioni)
+        - 3 serie di french press con bilanciere EZ (12 ripetizioni)
+        - 3 serie di alzate frontali con manubri (10 ripetizioni)
+        - 3 serie di dips su panca (15 ripetizioni).
+
+  utter_scheda_schiena:
+    - text: |
+        Ecco una scheda di allenamento per la schiena:
+        - 3 serie di rematore con bilanciere (8-10 ripetizioni)
+        - 3 serie di lat machine avanti (10 ripetizioni)
+        - 4 serie di stacchi da terra (8 ripetizioni)
+        - 3 serie di pull-over ai cavi (12 ripetizioni).
+    - text: |
+        Prova questa scheda per la schiena:
+        - 3 serie di trazioni alla sbarra (massime ripetizioni)
+        - 4 serie di rematore con manubrio (10 ripetizioni)
+        - 3 serie di hyperextensions con peso (15 ripetizioni)
+        - 3 serie di rematore al cavo basso (12 ripetizioni).
+
+  utter_scheda_addominali:
+    - text: |
+        Ecco una scheda di allenamento per gli addominali:
+        - 3 serie di crunch a terra (15 ripetizioni)
+        - 3 serie di plank (tenuta di 30-45 secondi)
+        - 3 serie di sollevamenti gambe (10-12 ripetizioni)
+        - 3 serie di russian twist con peso (20 ripetizioni totali).
+    - text: |
+        Ecco un'altra scheda per gli addominali:
+        - 3 serie di bicicletta a terra (20 ripetizioni per lato)
+        - 3 serie di plank laterale (30 secondi per lato)
+        - 3 serie di crunch inversi (10 ripetizioni)
+        - 3 serie di mountain climbers (20 ripetizioni totali).
+
+  utter_acknowledge_deny:
+    - text: "Va bene, se hai bisogno di altro in futuro, sono qui per aiutarti! 💪"
+
+  utter_scheda_spalle:
+    - text: |
+        Ecco una scheda di allenamento per le spalle:
+        - 4 serie di shoulder press con bilanciere o manubri (8-10 ripetizioni)
+        - 3 serie di alzate laterali con manubri (12-15 ripetizioni)
+        - 3 serie di alzate frontali con manubri (10-12 ripetizioni)
+        - 3 serie di tirate al mento con bilanciere EZ (10 ripetizioni).
+    - text: |
+        Prova questa scheda completa per le spalle:
+        - 4 serie di military press con bilanciere (8 ripetizioni)
+        - 3 serie di alzate laterali ai cavi (12 ripetizioni)
+        - 3 serie di face pull con corda (15 ripetizioni)
+        - 3 serie di arnold press con manubri (10 ripetizioni).
+    - text: |
+        Ecco un'altra scheda per sviluppare le spalle:
+        - 4 serie di overhead press con manubri (10 ripetizioni)
+        - 3 serie di alzate posteriori per deltoidi (12 ripetizioni)
+        - 3 serie di upright row con bilanciere (10 ripetizioni)
+        - 3 serie di shrugs per trapezio (15 ripetizioni).
+    - text: |
+        Scheda avanzata per le spalle:
+        - 3 serie di pressa militare in piedi (10 ripetizioni)
+        - 3 serie di alzate laterali con pause isometriche (12 ripetizioni con tenuta di 2 secondi)
+        - 3 serie di alzate frontali con dischi (10-12 ripetizioni)
+        - 3 serie di tirate al cavo basso per deltoidi posteriori (15 ripetizioni).
+    - text: |
+        Programma per spalle forti e definite:
+        - 4 serie di push press con bilanciere (8 ripetizioni)
+        - 3 serie di lateral raise su panca inclinata (12 ripetizioni)
+        - 3 serie di face pull al cavo con corda (15 ripetizioni)
+        - 3 serie di dumbbell shrugs per trapezio (20 ripetizioni).
+
+  utter_ask_diet_goal:
+    - text: "🎯 Qual è il tuo obiettivo dietetico? Seleziona un'opzione:"
+      buttons:
+        - title: "🔻 Perdere peso"
+          payload: "perdere peso"
+        - title: "💪 Aumentare massa"
+          payload: "aumentare massa"
+        - title: "⚖️ Mantenere il peso"
+          payload: "mantenere il peso"
+        - title: "⚡ Più energia"
+          payload: "più energia"
+
+  utter_ask_food_preferences:
+    - text: "🥗 Hai preferenze alimentari o restrizioni? Scegli un'opzione:"
+      buttons:
+        - title: "🌱 Vegano"
+          payload: "vegano"
+        - title: "🥓 Keto"
+          payload: "keto"
+        - title: "🌾 Senza glutine"
+          payload: "senza glutine"
+        - title: "🍽️ No restrizioni"
+          payload: "no restrizioni"
+
+  utter_ask_calorie_intake:
+    - text: "🔢 Inserisci l'apporto calorico giornaliero in kcal (esempio: 2000 kcal):"
+
+  # Richieste esercizi specifici
+  utter_richiesta_esercizio_defaticante:
+    - text: |
+        Ecco un esercizio defaticante:
+        - Prova il rilassamento muscolare con 5 minuti di respirazione profonda.
+        - Aggiungi 10 minuti di stretching leggero (gambe, braccia, schiena).
+        - Termina con 5 minuti di camminata a ritmo lento.
+
+  utter_richiesta_esercizio_braccia:
+    - text: |
+        Ecco alcuni esercizi per le braccia:
+        - Curl con manubri alternati (3 serie da 12 ripetizioni)
+        - French press con bilanciere EZ (3 serie da 10 ripetizioni)
+        - Hammer curl (3 serie da 12 ripetizioni)
+        - Push-up stretti per tricipiti (3 serie da 8 ripetizioni).
+    - text: |
+        Prova questa sequenza per rafforzare le braccia:
+        - Curl con bilanciere (4 serie da 10 ripetizioni)
+        - Estensioni tricipiti ai cavi (3 serie da 12 ripetizioni)
+        - Alzate frontali con manubri (3 serie da 12 ripetizioni)
+        - Dips su panca (3 serie da 15 ripetizioni).
+
+  utter_richiesta_esercizio_gambe:
+    - text: |
+        Ecco alcuni esercizi per le gambe:
+        - Squat con bilanciere (4 serie da 10 ripetizioni)
+        - Stacchi rumeni con manubri (3 serie da 12 ripetizioni)
+        - Leg curl alla macchina (3 serie da 12 ripetizioni)
+        - Calf raises (3 serie da 15 ripetizioni).
+    - text: |
+        Prova questa sequenza per gambe forti:
+        - Front squat (3 serie da 8 ripetizioni)
+        - Affondi bulgari (3 serie da 10 ripetizioni per gamba)
+        - Step-up su panca con manubri (3 serie da 12 ripetizioni per gamba)
+        - Hack squat alla macchina (3 serie da 10 ripetizioni).
+
+  utter_richiesta_esercizio_schiena:
+    - text: |
+        Ecco alcuni esercizi per la schiena:
+        - Trazioni alla sbarra (3 serie da 8 ripetizioni)
+        - Rematore con bilanciere (4 serie da 10 ripetizioni)
+        - Stacchi da terra (3 serie da 8 ripetizioni)
+        - Lat machine avanti (3 serie da 12 ripetizioni).
+    - text: |
+        Prova questa sequenza per la schiena:
+        - Pull-over ai cavi (3 serie da 12 ripetizioni)
+        - Iperestensioni per la parte bassa della schiena (3 serie da 15 ripetizioni)
+        - Rematore con manubrio (3 serie da 10 ripetizioni per lato)
+        - Rematore al cavo basso (3 serie da 12 ripetizioni).
+
+  utter_richiesta_esercizio_petto:
+    - text: |
+        Ecco alcuni esercizi per il petto:
+        - Panca piana con bilanciere (4 serie da 10 ripetizioni)
+        - Croci su panca inclinata con manubri (3 serie da 12 ripetizioni)
+        - Flessioni a terra con pausa di 2 secondi (3 serie da 10 ripetizioni)
+        - Dip alle parallele per il petto (3 serie da 12 ripetizioni).
+    - text: |
+        Prova questa sequenza per il petto:
+        - Panca inclinata con manubri (4 serie da 10 ripetizioni)
+        - Chest fly ai cavi (3 serie da 12 ripetizioni)
+        - Push-up con piedi sollevati (3 serie da 15 ripetizioni)
+        - Pull-over con manubrio (3 serie da 10 ripetizioni).
+
+  utter_ask_more_details:
+    - text: "Vuoi sapere di più su esercizi specifici o consigli per il tuo piano? 🤖💪"
+
+  # Saluto finale
+  utter_goodbye:
+    - text: |
+        Grazie per avermi usato! A presto e buon allenamento! 💪  
+        ⚠️⚠️ Disclaimer: Le informazioni fornite da FitBot sono a scopo informativo e NON sostituiscono il parere di un medico o di un professionista qualificato. 
+        CONSULTA SEMPRE un esperto prima di iniziare un nuovo piano di allenamento o dieta! ⚠️⚠️
+
+# Slot
+slots:
+  fallback_count:
+    type: float
+    initial_value: 0.0
+    influence_conversation: false
+    min_value: 0
+    max_value: 100
+    mappings: # Richiesto anche se non fa nulla
+      - type: custom
+
+  fitness_goal:
+    type: text
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: fitness_form
+            requested_slot: fitness_goal
+
+  experience_level:
+    type: text
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: fitness_form
+            requested_slot: experience_level
+
+  availability:
+    type: text
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: fitness_form
+            requested_slot: availability
+
+  diet_goal:
+    type: categorical
+    values:
+      - "perdere peso"
+      - "aumentare massa"
+      - "mantenere il peso"
+      - "più energia"
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: diet_form
+            requested_slot: diet_goal
+
+  food_preferences:
+    type: categorical
+    values:
+      - "vegano"
+      - "keto"
+      - "senza glutine"
+      - "no restrizioni"
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: diet_form
+            requested_slot: food_preferences
+
+  calorie_intake:
+    type: float
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: diet_form
+            requested_slot: calorie_intake
+
+forms:
+  fitness_form:
+    required_slots:
+      - fitness_goal
+      - experience_level
+      - availability
+
+  diet_form:
+    required_slots:
+      - diet_goal
+      - food_preferences
+      - calorie_intake
+
+# Azioni
+actions:
+  - utter_greet
+  - utter_workout_plan
+  - validate_fitness_form
+  - action_create_personalized_workout
+  - utter_scheda_schiena
+  - action_provide_exercises
+  - action_default_fallback
+  - utter_scheda_defaticante
+  - action_submit_fitness_form
+  - action_reset_slots
+  - action_handle_fallback
+  - action_stop_bot
+  - utter_goodbye
+  - validate_diet_form
+  - action_submit_diet_form
+  - action_provide_diet_plan
+
+session_config:
+  session_expiration_time: 60
