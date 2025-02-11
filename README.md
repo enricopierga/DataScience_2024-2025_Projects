@@ -28,7 +28,8 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 ### 3️⃣ **Sentiment Analysis con BERT**  
 📌 **Descrizione:**  
 - Sfruttamento di **modelli basati su BERT** per effettuare analisi del sentiment su dataset testuali;
-- **Fine-tuning del modello** per migliorare le performance.
+- **Fine-tuning del modello** per migliorare le performance;
+- Comparazione dei modelli **BERT** - **DistillBERT** - **RoBERTa**
 
 📂 **Cartella:** `PROJ3_BERT`  
 📜 **Tecnologie utilizzate:** Python, Hugging Face Transformers, PyTorch, TensorFlow
