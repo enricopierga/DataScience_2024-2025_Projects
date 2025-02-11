@@ -73,7 +73,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 ---
 
-# 🤝 Contributi
+## 🤝 Contributi
 
 |Nome | GitHub |
 |-----------|--------|
