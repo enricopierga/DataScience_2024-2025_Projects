@@ -5,12 +5,12 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 ## 🚀 Progetti
 
-### 1️⃣ **Apple Stocks Time Series Analysis & Tennis Match Classification & Clustering**  
+### 1️⃣ **Apple Stocks Time Series Analysis & Tennis Match Classification and Clustering**  
 📌 **Descrizione:**  
 - Analisi delle **azioni Apple** con tecniche di **time series forecasting**;
 - **Classificazione e clustering** su un dataset di **partite ATP di tennis**, con tecniche di **machine learning**.
 
-📂 **Cartella:** `PROJ1_DescAnalysis_Class_Cluster_Forec`  
+📂 **Cartella:** `PROJ1_Classification_Clustering_Forecasting`  
 📜 **Tecnologie utilizzate:** Python, Pandas, Scikit-learn, Matplotlib, Seaborn  
 
 ---
@@ -28,10 +28,11 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 ### 3️⃣ **Sentiment Analysis con BERT**  
 📌 **Descrizione:**  
 - Sfruttamento di **modelli basati su BERT** per effettuare analisi del sentiment su dataset testuali;
-- **Fine-tuning del modello** per migliorare le performance.
+- **Fine-tuning del modello** per migliorare le performance;
+- Comparazione dei modelli **BERT** - **DistillBERT** - **RoBERTa**
 
 📂 **Cartella:** `PROJ3_BERT`  
-📜 **Tecnologie utilizzate:** Python, Hugging Face Transformers, PyTorch, TensorFlow
+📜 **Tecnologie utilizzate:** Python, BERT
 
 ---
 
@@ -45,13 +46,13 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 ---
 
-### 5️⃣ **Text Classification & NLP Applications**  
+### 5️⃣ **Text Classification con l'uso di Word2Vec**  
 📌 **Descrizione:**  
-- **Classificazione del testo** e altri utilizzi avanzati di **Natural Language Processing (NLP)**;
+- **Classificazione del testo** utilizzando le Word Embedding;
 - Analisi ed estrazione di informazioni da dataset testuali con librerie avanzate.
 
 📂 **Cartella:** `PROJ5_Word2Vec`  
-📜 **Tecnologie utilizzate:** Python, NLTK, SpaCy, Hugging Face  
+📜 **Tecnologie utilizzate:** Python, NLTK, Word2Vec  
 
 <p align="right">(<a href="#readme-top">Torna su</a>)</p>
 
