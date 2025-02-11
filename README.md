@@ -57,7 +57,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 ---
 
-## 📌 Come Utilizzare la repository  
+## 📌 Come utilizzare la repository  
 1. **Clonare il repository:**  
    ```bash
    git clone https://github.com/enricopierga/DataScience_2024-2025_Projects.git
