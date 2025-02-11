@@ -31,7 +31,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 - **Fine-tuning del modello** per migliorare le performance.
 
 📂 **Cartella:** `PROJ3_BERT`  
-📜 **Tecnologie utilizzate:** Python, Hugging Face Transformers, PyTorch, TensorFlow
+📜 **Tecnologie utilizzate:** Python, BERT
 
 ---
 
@@ -51,7 +51,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 - Analisi ed estrazione di informazioni da dataset testuali con librerie avanzate.
 
 📂 **Cartella:** `PROJ5_Word2Vec`  
-📜 **Tecnologie utilizzate:** Python, NLTK, SpaCy, Hugging Face  
+📜 **Tecnologie utilizzate:** Python, NLTK 
 
 ---
 
