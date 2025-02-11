@@ -29,7 +29,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 📌 **Descrizione:**  
 - Sfruttamento di **modelli basati su BERT** per effettuare analisi del sentiment su dataset testuali;
 - **Fine-tuning del modello** per migliorare le performance;
-- Comparazione dei modelli **BERT** - **DistillBERT** - **RoBERTa**
+- Comparazione dei modelli **BERT** - **DistilBERT** - **RoBERTa**
 
 📂 **Cartella:** `PROJ3_BERT`  
 📜 **Tecnologie utilizzate:** Python, BERT
