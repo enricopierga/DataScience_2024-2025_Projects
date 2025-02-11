@@ -32,7 +32,7 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 - Comparazione dei modelli **BERT** - **DistillBERT** - **RoBERTa**
 
 📂 **Cartella:** `PROJ3_BERT`  
-📜 **Tecnologie utilizzate:** Python, Hugging Face Transformers, PyTorch, TensorFlow
+📜 **Tecnologie utilizzate:** Python, BERT
 
 ---
 
@@ -46,13 +46,13 @@ Il nostro lavoro si concentra su una varietà di tematiche avanzate, tra cui **a
 
 ---
 
-### 5️⃣ **Text Classification & NLP Applications**  
+### 5️⃣ **Text Classification con l'uso di Word2Vec**  
 📌 **Descrizione:**  
-- **Classificazione del testo** e altri utilizzi avanzati di **Natural Language Processing (NLP)**;
+- **Classificazione del testo** utilizzando le Word Embedding;
 - Analisi ed estrazione di informazioni da dataset testuali con librerie avanzate.
 
 📂 **Cartella:** `PROJ5_Word2Vec`  
-📜 **Tecnologie utilizzate:** Python, NLTK, SpaCy, Hugging Face  
+📜 **Tecnologie utilizzate:** Python, NLTK, Word2Vec  
 
 <p align="right">(<a href="#readme-top">Torna su</a>)</p>
 
